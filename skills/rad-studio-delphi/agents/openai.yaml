@@ -9,7 +9,7 @@ interface:
 dependencies:
   tools:
     - type: "mcp"
-      value: "pascal-dev"
+      value: "pascal-mcp"
       description: "Required Delphi MCP compiler, project, form, and runtime tools"
       transport: "stdio"
 

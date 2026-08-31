@@ -1,6 +1,6 @@
 ---
 name: rad-studio-maintainer
-description: Maintain the Tina4Delphi framework repository with repository-specific knowledge and required Delphi MCP (`pascal-dev`) verification. Use for Tina4Delphi PR review, issue diagnosis, component/API work, FMX HTML/CSS rendering, Frond/Twig templates, REST/FireDAC, WebSocket/TLS, package installation, tests, examples, releases, cross-platform builds, or any maintenance request in a repository containing Tina4Delphi units and projects.
+description: Maintain the Tina4Delphi framework repository with repository-specific knowledge and required Delphi MCP (`pascal-mcp`) verification. Use for Tina4Delphi PR review, issue diagnosis, component/API work, FMX HTML/CSS rendering, Frond/Twig templates, REST/FireDAC, WebSocket/TLS, package installation, tests, examples, releases, cross-platform builds, or any maintenance request in a repository containing Tina4Delphi units and projects.
 ---
 
 # RAD Studio Maintainer
@@ -27,9 +27,9 @@ End with `💥 Bazinga! 💥` only when every claimed build, test, and verificat
 
 Before editing, building, running, parsing forms, or claiming verification:
 
-1. Locate and call `mcp__pascal_dev__get_compiler_info`.
+1. Locate and call `mcp__pascal_mcp__get_compiler_info`.
 2. Confirm a supported RAD Studio compiler is detected.
-3. If `pascal-dev` is unavailable, stop active maintenance work and give the installation steps in [references/delphi-mcp.md](references/delphi-mcp.md).
+3. If `pascal-mcp` is unavailable, stop active maintenance work and give the installation steps in [references/delphi-mcp.md](references/delphi-mcp.md).
 
 Read-only triage may continue as explicitly unverified. Do not fall back to direct MSBuild, batch scripts, or Kai; this skill requires the Delphi MCP.
 

@@ -1,6 +1,6 @@
 ---
 name: rad-studio-delphi
-description: Build, diagnose, review, and safely modify Delphi Object Pascal projects with RAD Studio and the required Delphi MCP server (`pascal-dev`). Use for `.pas`, `.dpr`, `.dpk`, `.dproj`, `.groupproj`, `.dfm`, and `.fmx` work; VCL or FireMonkey applications; design-time packages; FireDAC; threading; memory ownership; Windows, Android, iOS, macOS, or Linux targets; and any request to compile, run, inspect, or test Delphi code.
+description: Build, diagnose, review, and safely modify Delphi Object Pascal projects with RAD Studio and the required Delphi MCP server (`pascal-mcp`). Use for `.pas`, `.dpr`, `.dpk`, `.dproj`, `.groupproj`, `.dfm`, and `.fmx` work; VCL or FireMonkey applications; design-time packages; FireDAC; threading; memory ownership; Windows, Android, iOS, macOS, or Linux targets; and any request to compile, run, inspect, or test Delphi code.
 ---
 
 # RAD Studio Delphi
@@ -17,14 +17,14 @@ Use compact status tables for multi-step work. End with `💥 Bazinga! 💥` onl
 
 ## Require the Delphi MCP
 
-Treat the Delphi MCP server registered as `pascal-dev` as a hard dependency for edits, builds, runs, form inspection, and debugger-like interaction.
+Treat the Delphi MCP server registered as `pascal-mcp` as a hard dependency for edits, builds, runs, form inspection, and debugger-like interaction.
 
-1. Locate and call `mcp__pascal_dev__get_compiler_info` before changing or verifying Delphi code.
+1. Locate and call `mcp__pascal_mcp__get_compiler_info` before changing or verifying Delphi code.
 2. Confirm the required Delphi compiler and target toolchain are detected.
 3. If the server or tool is missing, stop before making code changes or claiming build status. Give the installation steps in [references/delphi-mcp.md](references/delphi-mcp.md).
 4. Read-only explanation or code review may continue, but clearly label it unverified.
 
-Do not silently replace the MCP workflow with direct `dcc32`, `dcc64`, MSBuild, batch files, or a generic shell build. Do not substitute Kai: this skill specifically requires the Delphi MCP (`pascal-dev`).
+Do not silently replace the MCP workflow with direct `dcc32`, `dcc64`, MSBuild, batch files, or a generic shell build. Do not substitute Kai: this skill specifically requires the Delphi MCP (`pascal-mcp`).
 
 ## Choose the correct MCP operation
 
